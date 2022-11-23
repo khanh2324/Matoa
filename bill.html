@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hoá đơn</title>
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="container header d-flex justify-content-between">
+                <a href="./index.html" class="header-logo">
+                    <img src="./assets/img/main-logo.png" alt="" />
+                </a>
+
+                <div class="header-nav d-none d-lg-block">
+                    <ul
+                        class="header-nav_list d-flex j er">
+                        <li class="header-nav_item">
+                            <a href="" class="header-nav_link">Watches</a>
+                        </li>
+                        <li class="header-nav_item">
+                            <a href="./contact.html" class="header-nav_link">Contact</a>
+                        </li>
+                        <li class="header-nav_item">
+                            <a href="./introduce.html" class="header-nav_link">Introduce</a>
+                        </li>
+                        <li class="header-nav_item">
+                            <a href="" class="header-nav_link">News</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="./cart.html" class="header-cart">
+                    <img
+                        class="header-cart_logo"
+                        src="./assets/img/cart.png"
+                        alt=""
+                    />
+                </a>
+            </div>
+
+            <div class="container bill d-flex justify-content-between">
+                <div class="col-lg-6 invoice">
+                    <div class="header">Detail Order</div>
+                    <div class="wrap d-flex justify-content-between">
+                        <div class="col-6">
+                            <div class="title">Subtotal</div>
+                            <div class="title">Shipping Cost</div>
+                            <div class="title">Promo Code</div>
+                            <div class="title">Packaging</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text">Rp 2.152.000</div>
+                            <div class="text">Rp 500.000</div>
+                            <div class="text">INDONESIA</div>
+                            <div class="text">Rp 50.000</div>
+                        </div>
+                    </div>
+                    <div class="grand-total d-flex justify-content-between">
+                        <div class="title">Grand Total</div>
+                        <div class="text">Rp 2.702.000</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 invoice">
+                    <div class="header">Billing Address</div>
+                    <form action="" class="information">
+                        <div class="wrapper">
+                            <div class="title">Fullname</div>
+                            <input
+                                type="text"
+                                placeholder="Ex: Rasyidin Arsyad Nasution"
+                            />
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">Email Address</div>
+                            <input
+                                type="text"
+                                placeholder="Ex: rasyid.arsyad@gmail.com"
+                            />
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">Phone Number</div>
+                            <input
+                                type="text"
+                                placeholder="Ex: 089111888999"
+                            />
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">Shipping Address </div>
+                            <input
+                                type="text"
+                                placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman"
+                            />
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">Country</div>
+                            <select class="select">
+                                <option>United State of America (USA)</option>
+                                <option>VietNam (VN)</option>
+                                <option>China (CN)</option>
+                            </select>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">State/Province</div>
+                            <select class="select">
+                                <option>California</option>
+                                <option>Texas</option>
+                                <option>New York</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="wrapper">
+                                <div class="title">City</div>
+                                <select class="select">
+                                    <option>San Francisco</option>
+                                    <option>Texas</option>
+                                    <option>New York</option>
+                                </select>
+                            </div>
+                            <div class="wrapper">
+                                <div class="title">Zip Code</div>
+                                <input
+                                    type="text"
+                                    placeholder="Ex: 94024"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="title">Choose Courier</div>
+                            <select class="select">
+                                <option>DHL</option>
+                                <option>GHN</option>
+                                <option>GHTK</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <div class="invoice-btn d-flex justify-content-between">
+                        <a class="btn">Continue Shopping</a>
+                        <a href="./confirmation.html" class="btn active">Place My Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo">
+                <div class="container">
+                    <div
+                        class="logo-wrap d-flex justify-content-center flex-wrap"
+                    >
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-1.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-2.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-3.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-4.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-5.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-6.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-7.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-8.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-9.png" alt="" />
+                        </div>
+                        <div
+                            class="col-lg-2dot4 col-md-3 col-12 logo-item d-flex align-items-center justify-content-center"
+                        >
+                            <img src="./assets/img/logo/logo-10.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="container">
+                    <div
+                        class="footer-content d-flex flex-wrap flex-lg-nowrap justify-content-between"
+                    >
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="" class="footer-logo">
+                                <img
+                                    src="./assets/img/footer/footer-logo.png"
+                                    alt=""
+                                />
+                            </a>
+
+                            <div class="footer-content_item">
+                                <div class="footer-content_title">Address</div>
+                                <div class="footer-content_text">
+                                    Store & Office
+                                </div>
+                                <div class="footer-content_text">
+                                    Jl. Setrasari Kulon III, No. 10-12,
+                                </div>
+                                <div class="footer-content_text">
+                                    Sukarasa, Sukasari, Bandung,
+                                </div>
+                                <div class="footer-content_text">
+                                    Jawa Barat, Indonesia 40152
+                                </div>
+
+                                <div class="footer-content_title">
+                                    Office Hour
+                                </div>
+                                <div class="footer-content_text">
+                                    Monday - Sunday
+                                </div>
+                                <div class="footer-content_text">
+                                    10.00 - 18.00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-title">Get in touch</div>
+
+                            <div class="footer-content_item">
+                                <div class="d-flex justify-content-between">
+                                    <div class="footer-content_title">
+                                        Phone
+                                    </div>
+                                    <div class="footer-content_text">
+                                        022-20277564
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="footer-content_title">
+                                        Service Center
+                                    </div>
+                                    <div class="footer-content_text">
+                                        0811-233-8899
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="footer-content_title">
+                                        Customer Service
+                                    </div>
+                                    <div class="footer-content_text">
+                                        0811-235-9988
+                                    </div>
+                                </div>
+
+                                <div class="footer-content_wrap d-flex">
+                                    <a href="" class="footer-content_logo"
+                                        ><img
+                                            src="./assets/img/footer/Facebook.png"
+                                            alt=""
+                                    /></a>
+                                    <a href="" class="footer-content_logo"
+                                        ><img
+                                            src="./assets/img/footer/Instagram.png"
+                                            alt=""
+                                    /></a>
+                                    <a href="" class="footer-content_logo"
+                                        ><img
+                                            src="./assets/img/footer/Twitter.png"
+                                            alt=""
+                                    /></a>
+                                    <a href="" class="footer-content_logo"
+                                        ><img
+                                            src="./assets/img/footer/Youtube.png"
+                                            alt=""
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-title">Useful Link</div>
+
+                            <div class="footer-content_item">
+                                <div class="footer-content_wrap">
+                                    <div class="footer-content_text">
+                                        Warranty & Complaints
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Order & Shipping
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Tracking Order
+                                    </div>
+                                    <div class="footer-content_text">
+                                        About Us
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Repair
+                                    </div>
+                                    <div class="footer-content_text">Terms</div>
+                                    <div class="footer-content_text">FAQ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-title">Campaign</div>
+
+                            <div class="footer-content_item">
+                                <div class="footer-content_wrap">
+                                    <div class="footer-content_text">
+                                        Mengenal Arti Cukup
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Tell Your Difference
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Waykambas
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Rebrand
+                                    </div>
+                                    <div class="footer-content_text">
+                                        Gallery
+                                    </div>
+                                    <div class="footer-content_text">Singo</div>
+                                    <div class="footer-content_text">Rakai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
